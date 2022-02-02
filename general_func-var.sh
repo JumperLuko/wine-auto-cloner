@@ -1,7 +1,7 @@
 #!/bin/bash
 
 wineSystemDir="/opt/wine-clone"
-$wine="wine"
+wine="wine"
 
 mkdir-if() {
     if ! [ -e "$1" ]; then

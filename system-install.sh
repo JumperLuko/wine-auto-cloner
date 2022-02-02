@@ -23,4 +23,5 @@ sudo WINEPREFIX="$wineSystemDir/$wineSystemFolder" wine wineboot 2>> ~/.cache/wi
 sudo WINEPREFIX="$wineSystemDir/$wineSystemFolder" wine $wineExe 2>> ~/.cache/wine-clone.log
 
 # Copy executable for user, thinking about how
-# sudo cp user-clone.sh /etc/profile.d/
+# sudo cp $wineSystemFolder.sh $wineSystemDir/
+# ln -S $wineSystemDir/$wineSystemFolder.sh /usr/bin/wine-clone_$wineSystemFolder
